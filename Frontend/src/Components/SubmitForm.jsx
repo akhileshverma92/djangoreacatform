@@ -15,7 +15,7 @@ const server = import.meta.env.VITE_BACKEND_URL
     setStatus("Submitting...");
 
     try {
-      const res = await  fetch(`${server}/api/submit1`,{
+      const res = await  fetch(`${server}/api/submit`,{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -62,4 +62,5 @@ const server = import.meta.env.VITE_BACKEND_URL
     </form>
   );
 }
+
 
