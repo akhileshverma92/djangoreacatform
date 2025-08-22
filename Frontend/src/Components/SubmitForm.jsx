@@ -3,7 +3,8 @@ import { useState } from "react";
 export default function SubmitForm() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
-const server = import.meta.env.VITE_BACKEND_URL|| 
+const server = import.meta.env.VITE_BACKEND_URL
+  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -61,3 +62,4 @@ const server = import.meta.env.VITE_BACKEND_URL||
     </form>
   );
 }
+
